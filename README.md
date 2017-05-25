@@ -4,19 +4,22 @@ Server that uses redis as cache.
 
 ## Installation
 
-1. Install [redis](https://redis.io/download).
+Requirements:
 
-2. Run server:
+- redis-3.2.9
 
-    ```bash
-    $ python run.py
-    ```
+Run:
 
-3. Run redis CLI:
+```bash
+$ redis-server ./redis.conf
+```
 
-    ```bash
-    $ python run.py -cli
-    ```
+Run with docker:
+
+```bash
+$ docker build -t cache-server .
+$ docker run --rm -p 6379:6379 -d cache-server
+```
 
 ## License
 
