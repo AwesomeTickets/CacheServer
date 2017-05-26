@@ -4,22 +4,22 @@ Server that uses redis as cache.
 
 ## Installation
 
-Requirements:
+- Requirements
 
-- redis-3.2.9
+    - redis 3.2.9
 
-Run:
+- Run locally
 
-```bash
-$ redis-server ./redis.conf
-```
+    ```bash
+    $ redis-server ./redis.conf
+    ```
 
-Run with docker:
+- Run with docker
 
-```bash
-$ docker build -t cache-server .
-$ docker run --rm -p 6379:6379 -d cache-server
-```
+    ```bash
+    $ docker build -t cache-server .
+    $ docker run --rm --name cache-server -p 6379:6379 -d cache-server
+    ```
 
 ## License
 
