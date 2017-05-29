@@ -14,7 +14,7 @@ Server that uses redis as cache.
     $ redis-server ./redis.conf
     ```
 
-- Run docker image
+- Build docker image
 
     ```bash
     $ docker build -t cache-server .
