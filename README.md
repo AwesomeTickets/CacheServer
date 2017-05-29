@@ -14,11 +14,10 @@ Server that uses redis as cache.
     $ redis-server ./redis.conf
     ```
 
-- Run with docker
+- Run docker image
 
     ```bash
     $ docker build -t cache-server .
-    $ docker run --name cache-server -p 6379:6379 -d cache-server
     ```
 
 ## License
